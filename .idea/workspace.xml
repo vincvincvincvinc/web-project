@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb6ed522-c7ef-4de0-9c27-4b9d65d4fad5" name="Changes" comment="Basic back end">
+    <list default="true" id="cb6ed522-c7ef-4de0-9c27-4b9d65d4fad5" name="Changes" comment="Backend update and error solution">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/epsi/b32324c1/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/epsi/b32324c1/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/epsi/b32324c1/controller/BeerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/epsi/b32324c1/model/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/epsi/b32324c1/model/Beer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -52,6 +53,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -73,7 +75,7 @@
       <updated>1708681953955</updated>
       <workItem from="1708681954838" duration="6626000" />
       <workItem from="1708937532572" duration="233000" />
-      <workItem from="1714377417095" duration="2510000" />
+      <workItem from="1714377417095" duration="5191000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -91,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708699479264</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Backend update and error solution">
+      <option name="closed" value="true" />
+      <created>1714380358717</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714380358718</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Basic back end" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic back end" />
+    <MESSAGE value="Backend update and error solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend update and error solution" />
   </component>
 </project>

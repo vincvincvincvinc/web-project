@@ -1,11 +1,13 @@
 package fr.epsi.b32324c1.controller;
 
 import fr.epsi.b32324c1.service.BeerService;
+import fr.epsi.b32324c1.model.Beer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/beers")

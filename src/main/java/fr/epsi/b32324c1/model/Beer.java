@@ -13,4 +13,13 @@ public class Beer {
     private String name;
     private String brewery;
     private String image;
+
+    // Getters and setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

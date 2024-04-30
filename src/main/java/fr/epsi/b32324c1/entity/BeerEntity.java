@@ -1,4 +1,4 @@
-package fr.epsi.b32324c1.model;
+package fr.epsi.b32324c1.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Beer {
+public class BeerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -27,7 +27,7 @@ public class Beer {
         return name;
     }
 
-    public void setName (String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -47,3 +47,4 @@ public class Beer {
         this.image = image;
     }
 }
+

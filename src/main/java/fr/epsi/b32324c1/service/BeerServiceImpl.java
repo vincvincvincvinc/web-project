@@ -1,6 +1,6 @@
 package fr.epsi.b32324c1.service;
 
-import fr.epsi.b32324c1.model.Beer;
+import fr.epsi.b32324c1.entity.BeerEntity;
 import fr.epsi.b32324c1.repository.BeerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,22 +13,22 @@ public class BeerServiceImpl implements BeerService {
     private BeerRepository beerRepository;
 
     @Override
-    public List<Beer> getAllBeers() {
+    public List<BeerEntity> getAllBeers() {
         return beerRepository.findAll();
     }
 
     @Override
-    public Beer getBeerById(Long id) {
+    public BeerEntity getBeerById(Long id) {
         return beerRepository.findById(id).orElse(null);
     }
 
     @Override
-    public Beer createBeer(Beer beer) {
+    public BeerEntity createBeer(BeerEntity beer) {
         return beerRepository.save(beer);
     }
 
     @Override
-    public Beer updateBeer(Long id, Beer beer) {
+    public BeerEntity updateBeer(Long id, BeerEntity beer) {
         beer.setId(id);
         return beerRepository.save(beer);
     }

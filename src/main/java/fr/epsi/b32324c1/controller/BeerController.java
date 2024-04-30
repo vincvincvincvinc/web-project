@@ -1,7 +1,7 @@
 package fr.epsi.b32324c1.controller;
 
 import fr.epsi.b32324c1.service.BeerService;
-import fr.epsi.b32324c1.model.Beer;
+import fr.epsi.b32324c1.entity.BeerEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,25 +17,25 @@ public class BeerController {
     private BeerService beerService;
 
     @GetMapping
-    public List<Beer> getAllBeers() {
+    public List<BeerEntity> getAllBeers() {
         return beerService.getAllBeers();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Beer> getBeerById(@PathVariable Long id) {
-        Beer beer = beerService.getBeerById(id);
+    public ResponseEntity<BeerEntity> getBeerById(@PathVariable Long id) {
+        BeerEntity beer = beerService.getBeerById(id);
         return ResponseEntity.ok().body(beer);
     }
 
     @PostMapping
-    public ResponseEntity<Beer> createBeer(@RequestBody Beer beer) {
-        Beer createdBeer = beerService.createBeer(beer);
+    public ResponseEntity<BeerEntity> createBeer(@RequestBody BeerEntity beer) {
+        BeerEntity createdBeer = beerService.createBeer(beer);
         return ResponseEntity.created(URI.create("/api/beers/" + createdBeer.getId())).body(createdBeer);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Beer> updateBeer(@PathVariable Long id, @RequestBody Beer beer) {
-        Beer updatedBeer = beerService.updateBeer(id, beer);
+    public ResponseEntity<BeerEntity> updateBeer(@PathVariable Long id, @RequestBody BeerEntity beer) {
+        BeerEntity updatedBeer = beerService.updateBeer(id, beer);
         return ResponseEntity.ok().body(updatedBeer);
     }
 

@@ -1,11 +1,11 @@
 package fr.epsi.b32324c1.service;
 
-import fr.epsi.b32324c1.model.Beer;
+import fr.epsi.b32324c1.entity.BeerEntity;
 import java.util.List;
 public interface BeerService {
-    List<Beer> getAllBeers();
-    Beer getBeerById(Long id);
-    Beer createBeer(Beer beer);
-    Beer updateBeer(Long id, Beer beer);
+    List<BeerEntity> getAllBeers();
+    BeerEntity getBeerById(Long id);
+    BeerEntity createBeer(BeerEntity beer);
+    BeerEntity updateBeer(Long id, BeerEntity beer);
     void deleteBeer(Long id);
 }

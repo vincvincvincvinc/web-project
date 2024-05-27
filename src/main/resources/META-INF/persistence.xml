@@ -3,8 +3,11 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
-  <persistence-unit name="default">
+  <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <class>fr.epsi.b32324c1.entity.BeerEntity</class>
+    <class>fr.epsi.b32324c1.entity.BreweryEntity</class>
+    <class>fr.epsi.b32324c1.entity.ImageEntity</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/ubeer"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
